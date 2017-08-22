@@ -1,0 +1,86 @@
+p {
+  font-size: 30px;
+  text-align: center;
+/*  text-decoration: underline wavy violet;
+*/}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+img:hover{
+  border: 2px solid white;
+}
+
+
+body {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  animation: blink 20s linear infinite;
+  -webkit-animation: blink 20s linear infinite;
+}
+
+select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@keyframes blink {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: indigo;
+  }
+  28.6% {
+    background: blue;
+  }
+  42.9% {
+    background: green;
+  }
+  57.2% {
+    background: yellow;
+  }
+  71.5% {
+    background: orange;
+  }
+  85.8% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: indigo;
+  }
+  28.6% {
+    background: blue;
+  }
+  42.9% {
+    background: green;
+  }
+  57.2% {
+    background: yellow;
+  }
+  71.5% {
+    background: orange;
+  }
+  85.8% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
