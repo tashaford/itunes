@@ -8,7 +8,8 @@ class SongBox extends React.Component {
     super(props);
     this.state = {
       data: [],
-      focusSong: null
+      focusSong: null,
+      chartPosition: 0
     }
   }
 
@@ -28,9 +29,10 @@ class SongBox extends React.Component {
      request.send()
    }
 
-   setFocusSong(song){
+   setFocusSong(song, index){
      this.setState({
-       focusSong: song
+       focusSong: song,
+       chartPosition: parseInt(index) +1
      });
    }
 
@@ -38,7 +40,7 @@ class SongBox extends React.Component {
     return (
       <div className="song-box">
       <SongList data={this.state.data} selectSong={this.setFocusSong.bind(this)}/>
-      <Song song={this.state.focusSong}/>
+      <Song song={this.state.focusSong} chartPosition={this.state.chartPosition}/>
       </div>
       )
   }

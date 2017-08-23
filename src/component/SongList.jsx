@@ -15,7 +15,7 @@ class SongList extends React.Component {
       selectedIndex: newIndex
     });
     const selectedSong = this.props.data[newIndex];
-    this.props.selectSong(selectedSong);
+    this.props.selectSong(selectedSong, newIndex);
   }
 
 
