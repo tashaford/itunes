@@ -3,8 +3,8 @@
 Itunes homework
 
 ## Learning objectives
-	•	Practise making a request in a React app and passing the data from that request down the chain of components
-	•	Practise using stateless components
+	Practise making a request in a React app and passing the data from that request down the chain of components
+	Practise using stateless components
 
 ## Task
 Make a simple React app that displays the current UK top 20 songs. You can get the data for this here:
